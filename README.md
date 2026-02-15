@@ -39,13 +39,16 @@ To correctly calculate relative angles between the clock hand and light source:
 
 ```js
 ((angle + FULL_ROTATION + HALF_ROTATION) % FULL_ROTATION) - HALF_ROTATION
+```
 This ensures the result remains within:
 ```js
 [-180°, +180°]
+```
 ### 2️⃣  **2D Light Simulation**
 Shadow intensity is calculated using cosine falloff:
 ```js
 intensity = (1 - cos(theta)) / 2
+```
 This simulates how light behaves based on the angular difference between the light direction and object orientation.
 
 Inspired by the Lambertian reflectance model in computer graphics.
@@ -54,12 +57,14 @@ Inspired by the Lambertian reflectance model in computer graphics.
 Instead of using:
 ```js
 setInterval(update, 1000)
+```
 which accumulates delay over time,
 
 the clock synchronizes with the real second boundary:
 ```js
 const delay = 1000 - now.getMilliseconds();
 setTimeout(tick, delay);
+```
 
 ### 4️⃣ **Performance Optimization**
 
@@ -74,11 +79,13 @@ setTimeout(tick, delay);
 Simply open:
 ```js
 index.html
+```
 in your browser.
 
 ### Option 2 — Run Local Server (Recommended)
 ```js
 npx serve .
+```
 or use VSCode Live Server extension.
 
 ## 📸 **Preview**
