@@ -2,6 +2,7 @@ const DOM = {};
 const FULL_ROTATION = 360;
 const HALF_ROTATION = 180;
 const DEG_TO_RAD = Math.PI / 180;
+const NUMBER_SCALE_RATIO = 0.035;
 
 const CONFIG = {
   LIGHT_ANGLE: 345,
@@ -58,6 +59,9 @@ function renderClockNumbers() {
 
   const clockSize = clock.clientWidth;
   const radius = clockSize / 2;
+
+  const fontSize = clockSize * NUMBER_SCALE_RATIO;
+  DOM.clock.style.fontSize = `${fontSize}px`;
 
   const numberRadius =
     radius -

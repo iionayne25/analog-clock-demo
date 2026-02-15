@@ -127,10 +127,7 @@ body {
 }
 
 .clock-item.number {
-  font-size: 10px;
-  @media (min-width: 786px) {
-    font-size: 14px;
-  }
+  font-size: 1em;
 }
 
 .clock-item.dot {
