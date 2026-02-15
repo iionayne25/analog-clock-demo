@@ -124,10 +124,10 @@ This project was built to improve understanding of:
 - How lighting models from 3D graphics can be adapted into 2D UI
 - How to structure code for readability and maintainability
 
-##👤 **Author**
+## 👤 **Author**
 
-Pavinee Suthamjaem
-Frontend Development Practice Project
-2026
+- Pavinee Suthamjaem
+- Frontend Development Practice Project
+- 2026
 
 
