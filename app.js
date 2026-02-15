@@ -27,22 +27,20 @@ function cacheDOM() {
 
 function normalizeAngle(angle) {
   return (
-    ((angle + CONFIG.FULL_ROTATION + CONFIG.HALF_ROTATION) %
-      CONFIG.FULL_ROTATION) -
-    CONFIG.HALF_ROTATION
+    ((angle + FULL_ROTATION + HALF_ROTATION) % FULL_ROTATION) - HALF_ROTATION
   );
 }
 
 function getShadowFromLight(handDeg) {
   let diffDeg = normalizeAngle(handDeg - CONFIG.LIGHT_ANGLE);
 
+  const diffRad = diffDeg * DEG_TO_RAD;
+
   const cos = Math.cos(diffRad);
   const sin = Math.sin(diffRad);
 
-  const diffRad = diffDeg * DEG_TO_RAD;
-
   const x = sin * CONFIG.SHADOW_DISTANCE;
-  const y = -cod * CONFIG.SHADOW_DISTANCE;
+  const y = -cos * CONFIG.SHADOW_DISTANCE;
 
   const intensity = (1 - cos) / 2;
 
