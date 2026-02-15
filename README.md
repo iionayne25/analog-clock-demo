@@ -1,6 +1,6 @@
 # 🕒 Analog Clock with Dynamic Lighting
 
-A practice project built with **HTML, CSS, and TypeScript**  
+A practice project built with **HTML, CSS, and JavaScript**  
 to explore DOM manipulation, time synchronization, and 2D lighting simulation.
 
 ---
