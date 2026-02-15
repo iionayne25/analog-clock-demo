@@ -50,21 +50,6 @@ body {
   z-index: 1;
 }
 
-.clock-bg::before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -100%;
-  left: -50%;
-  background: radial-gradient(
-    circle at 55% 0%,
-    rgba(255, 255, 255, 0.25),
-    transparent 40%
-  );
-  pointer-events: none;
-}
-
 .inner-clock-bg {
   aspect-ratio: 1;
   width: 64%;
